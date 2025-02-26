@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+$bg-color: #69585f;
+$field-color: #fcddbc;
+$snake-color: #b8d8ba;
+$food-color: #ef959d;
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: $bg-color;
+}
+
+#start-screen {
+  height: 100%;
+}
+
+#game {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  #canvas {
+    background-color: $field-color;
+    display: block;
+    border-radius: var(--bs-border-radius);
+  }
+
+  #score {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    background-color: rgba($color: white, $alpha: 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: var(--bs-border-radius);
+  }
+}
