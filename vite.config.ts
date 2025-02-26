@@ -1,0 +1,12 @@
+import dotenv from "dotenv";
+import { defineConfig } from "vite";
+dotenv.config();
+
+export default defineConfig({
+  server: {
+    port: Number(process.env.APP_PORT),
+  },
+  preview: {
+    port: Number(process.env.APP_PORT),
+  },
+});
