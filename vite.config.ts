@@ -9,6 +9,6 @@ export default defineConfig({
   preview: {
     port: Number(process.env.APP_PORT),
     host: process.env.APP_IP,
-    allowedHosts: process.env.APP_IP ? [process.env.APP_IP] : undefined,
+    allowedHosts: true,
   },
 });
