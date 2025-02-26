@@ -13,7 +13,7 @@ export class Game {
   private snake!: Snake;
   private food!: Point;
   private canvas: Canvas;
-  private timeoutId: number | undefined;
+  private timeoutId: NodeJS.Timeout | undefined;
   private score = 0;
 
   constructor() {
